@@ -1,9 +1,12 @@
 # XERXES // CORE COGNITIVE SHIELD (CHROME EXTENSION)
 
+The link to the working model: https://xerxes.bitbuzz.app/
+
 The background communication layer for the XERXES workspace engine. This extension captures messaging signals from your hosted tracking dashboard tab and creates native browser warnings and alerts when you work on other tabs.
 
 **Engine Architect:** HRIDHAAN  
 **Target Routing Link:** [bitbuzz.app/Xerxes](https://bitbuzz.app/Xerxes)
+
 
 ---
 
