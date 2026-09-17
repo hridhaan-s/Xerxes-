@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xerxes</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="head">
+    <span class="mark" aria-hidden="true"></span>
+    <span class="wordmark">Xerxes</span>
+    <span class="dot" id="dot" aria-hidden="true"></span>
+  </header>
+
+  <section class="readout">
+    <p class="state" id="state">Not tracking</p>
+    <p class="detail" id="detail">Open the dashboard and calibrate to start a session.</p>
+  </section>
+
+  <section class="score" id="score-row" hidden>
+    <span class="score-value" id="score">—</span>
+    <span class="score-label">alignment, this session</span>
+  </section>
+
+  <div class="actions">
+    <button class="btn primary" id="open">Open dashboard</button>
+    <button class="btn" id="snooze">Snooze 20 min</button>
+  </div>
+
+  <section class="settings">
+    <label class="row">
+      <input type="checkbox" id="notificationsEnabled">
+      <span>Desktop alerts</span>
+    </label>
+    <label class="row">
+      <input type="checkbox" id="breakOverlayEnabled">
+      <span>Break card over the page you are on</span>
+    </label>
+    <p class="note" id="perm-note" hidden>
+      Needs permission to draw on any site. Chrome will ask once.
+    </p>
+    <label class="row range">
+      <span>Minimum gap between alerts</span>
+      <span class="range-value" id="cooldown-value">2 min</span>
+      <input type="range" id="alertCooldownSec" min="30" max="600" step="30">
+    </label>
+  </section>
+
+  <footer class="foot">
+    <span>Video never leaves your machine.</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
